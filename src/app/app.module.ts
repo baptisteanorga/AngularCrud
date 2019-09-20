@@ -10,6 +10,10 @@ import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import { ProductsService } from './products.service';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [ ProductsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

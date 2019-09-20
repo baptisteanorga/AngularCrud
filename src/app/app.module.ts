@@ -6,10 +6,8 @@ import { AppComponent } from './app.component';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { ProductGetComponent } from './product-get/product-get.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
-
-// app.module.ts
-
 import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +20,7 @@ import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
     BrowserModule,
     AppRoutingModule,
     SlimLoadingBarModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
